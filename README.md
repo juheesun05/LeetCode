@@ -30,8 +30,8 @@ public:
             int pop = x % 10; // x의 마지막 자리
             x /= 10; // x의 마지막 자리 제거
 
-            if (reverse > max_value / 10 || (reverse == max_value / 10 && pop > 7)) return 0; // 마지막 자리 숫자 7
-            if (reverse < min_value / 10 || (reverse == min_value / 10 && pop < -8)) return 0; // 마지막 자리 숫자 -8
+            if (reverse > INT_MAX / 10 || (reverse == INT_MAX / 10 && pop > 7)) return 0; // 마지막 자리 숫자 7
+            if (reverse < INT_MIN / 10 || (reverse == INT_MIN / 10 && pop < -8)) return 0; // 마지막 자리 숫자 -8
             reverse = reverse * 10 + pop; // 역순
         }
         return reverse; // 결과 반환
