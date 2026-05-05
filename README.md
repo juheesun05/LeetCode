@@ -18,6 +18,7 @@ Constraints:
 --> min_value = -2147483648
 
 ## 코드
+```cpp
 class Solution 
  {
 public:
@@ -37,3 +38,4 @@ public:
         
     }
 };
+```
